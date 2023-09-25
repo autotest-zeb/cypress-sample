@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Zebrunner Cypress reporting agent sample",
   "scripts": {
-    "test": "npx cypress run --headed --spec cypress/integration/basic.cy.js"
+    "test": "npx cypress run --headed --spec cypress/e2e/*/*.cy.js"
   },
   "dependencies": {
     "@zebrunner/javascript-agent-cypress": "^1.2.1",
