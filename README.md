@@ -60,7 +60,7 @@ npm install && npx cypress run --headed --spec cypress/e2e/search.cy.js
 to launch tests to check the execution of tests in threads:
 
 ```
-npm install && npx cypress run --headed --spec cypress/e2e/for_threads/**/*.cy.js
+npm install && npx cypress run --headed --spec cypress/e2e/for_threads/*.cy.js
 ```
 
 ### _Step 4: View test results_
