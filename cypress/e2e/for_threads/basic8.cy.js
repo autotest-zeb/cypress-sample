@@ -1,4 +1,4 @@
-describe('Basic reporting test', () => {
+describe('8. Basic reporting test', () => {
   const url = 'https://www.google.com/';
 
   it('Google search should be passed', () => {

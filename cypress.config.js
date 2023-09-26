@@ -10,8 +10,8 @@ module.exports = defineConfig({
     reportingServerAccessToken: '<accessToken>',
     reportingProjectKey: '<project_key>',
     reportingRunEnvironment: 'DEMO',
-    reportingRunBuild: '2.41.2.2431-SNAPSHOT',
-    reportingRunDisplayName: 'Cypress Demo Launch',
+    reportingRunBuild: 'cypress.12',
+    reportingRunDisplayName: 'Cypress v12',
   },
   e2e: {
     // We've imported your old cypress plugins here.

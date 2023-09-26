@@ -12,11 +12,10 @@ Before configuring Zebrunner Cypress reporting agent, you need to create a free 
 
 ### _Step 1: Basic project setup_
 
-Clone the Zebrunner's [samples](https://github.com/zebrunner/javascript-agent-samples) repository and navigate to the code directory as shown below:
+Clone the Zebrunner's [samples](https://github.com/autotest-zeb/cypress-sample.git) repository
 
 ```
-git clone https://github.com/zebrunner/javascript-agent-samples.git
-cd javascript-agent-samples/sample-cypress
+git clone https://github.com/autotest-zeb/cypress-sample.git
 ```
 
 ### _Step 2: Configure credentials and reporting_
@@ -27,9 +26,9 @@ In Zebrunner:
 - Click on "API Access" tab;
 - Press "Token" button, create a token and copy it before closing the dialog (you won't be able to see the token later).
 
-Define launch configuration (override defaults if needed) and copy content below to the list of reporters to the `cypress.json` file
+Define launch configuration (override defaults if needed) and copy content below to the list of reporters to the `cypress.config.js` file
 
-#### **`cypress.json`**
+#### **`cypress.config.js`**
 
 ```js
 "reporterOptions": {
@@ -37,8 +36,8 @@ Define launch configuration (override defaults if needed) and copy content below
        "reportingServerAccessToken": "<accessToken>",
        "reportingProjectKey": "<project_key>",
        "reportingRunEnvironment": "DEMO",
-       "reportingRunBuild": "2.41.2.2431-SNAPSHOT",
-       "reportingRunDisplayName": "Zebrunner Demo Launch"
+       "reportingRunBuild": 'cypress.12',
+       "reportingRunDisplayName": 'Cypress v12',
    }
 ```
 
@@ -46,8 +45,22 @@ Define launch configuration (override defaults if needed) and copy content below
 
 Please run the following command in the terminal
 
+to launch basic tests:
+
 ```
-npm install && npx cypress run --headed --spec cypress/integration/basic.cy.js
+npm install && npx cypress run --headed --spec cypress/e2e/basic.cy.js
+```
+
+to launch test to check abort:
+
+```
+npm install && npx cypress run --headed --spec cypress/e2e/search.cy.js
+```
+
+to launch tests to check the execution of tests in threads:
+
+```
+npm install && npx cypress run --headed --spec cypress/e2e/for_threads/**/*.cy.js
 ```
 
 ### _Step 4: View test results_

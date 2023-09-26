@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Zebrunner Cypress reporting agent sample",
   "scripts": {
-    "test": "npx cypress run --headed --spec cypress/e2e/*/*.cy.js"
+    "test": "npx cypress run --headed --spec cypress/e2e/basic.cy.js",
+    "abort": "npx cypress run --headed --spec cypress/e2e/search.cy.js",
+    "for_threads": "npx cypress run --headed --spec cypress/e2e/for_threads/**/*.cy.js"
   },
   "dependencies": {
     "@zebrunner/javascript-agent-cypress": "^1.2.1",
