@@ -51,7 +51,7 @@ to launch basic tests:
 npm install && npx cypress run --headed --spec cypress/e2e/basic.cy.js
 ```
 
-to launch tests to check abort:
+to launch tests to check abort(test executs more than 30 sec):
 
 ```
 npm install && npx cypress run --headed --spec cypress/e2e/search.cy.js
