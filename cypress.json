@@ -1,4 +1,6 @@
 {
+  "video": true,
+  "chromeWebSecurity": false,
   "reporter": "@zebrunner/javascript-agent-cypress",
   "reporterOptions": {
     "reportingServerHostname": "https://<workspace>.zebrunner.com/",
