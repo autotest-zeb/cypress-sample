@@ -51,6 +51,18 @@ to launch basic tests:
 npm install && npx cypress run --headed --spec cypress/e2e/basic.cy.js
 ```
 
+to launch only passed basic tests:
+
+```
+npm install && npx cypress run --headed --spec cypress/e2e/basic_only_passed.cy.js
+```
+
+to launch only failed basic tests:
+
+```
+npm install && npx cypress run --headed --spec cypress/e2e/basic_only_failed.cy.js
+```
+
 to launch tests to check abort(test executes more than 30 sec):
 
 ```
