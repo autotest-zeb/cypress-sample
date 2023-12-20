@@ -8,7 +8,7 @@
     "for_threads": "npx cypress run --headed --spec cypress/integration/for_threads/*.js"
   },
   "dependencies": {
-    "@zebrunner/javascript-agent-cypress": "^1.2.0",
+    "@zebrunner/javascript-agent-cypress": "^1.2.1",
     "cypress": "^9.7.0",
     "cypress-wait-until": "^1.7.2",
     "cypress-xpath": "^2.0.1",
